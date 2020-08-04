@@ -10,14 +10,18 @@ namespace TheBar
 
         DrinkContext drinkContext = new DrinkContext();
 
-        public void AddDrinkName(string name, List<Ingredient> ingredients)
+        public void AddDrinkName(string name, List<Mixer> mixers)
         {
 
+            drinkContext.Drinks.Add(new Drink(name, mixers));
+
+            drinkContext.SaveChanges();
         }
 
         public void RemoveDrink(Drink drink)
         {
             drinkContext.Drinks.Remove(drinkContext.Drinks.Find(drink.DrinkID));
+            drinkContext.SaveChanges();
         }
 
         public void UpdateDrink()
@@ -107,3 +111,10 @@ namespace TheBar
     }
 }
 
+/*menu
+ * 
+ * Create drink , aks for name = read line i en variable 
+ * cw choose ingredient list
+ * mixer.add = new mixer
+ * 
+ */

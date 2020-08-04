@@ -29,5 +29,11 @@ namespace TheBar
         {
 
         }
+
+        public Drink(string name, List<Mixer> mixer)
+        {
+            Name = name;
+            Mixers = mixer;
+        }
     }
 }
