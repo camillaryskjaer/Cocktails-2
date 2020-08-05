@@ -83,6 +83,7 @@ namespace TheBar
 
         }
 
+        // missing addables like example ice cubes and such, as i was lacking time for it.
         public void GenerateDrink()
         {
             drinkContext.Drinks.Add(new Drink(1, "Margarita", new List<Mixer>() { new Mixer(1,drinkContext.Ingredients.Find(18),60,"ml"), new Mixer(2, drinkContext.Ingredients.Find(16), 30, "ml"), new Mixer(3, drinkContext.Ingredients.Find(1), 60, "ml") }));
