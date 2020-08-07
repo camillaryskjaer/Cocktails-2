@@ -4,6 +4,8 @@ using System.Text;
 
 namespace TheBar
 {
+    //Flot at du har lavet en controller klasse, det er korrekt. Derudover er det dejligt at se at du ikke benytter Console.Writeline herinde
+    //Husk kodekommentar
     class Bartender
     {
         List<Drink> drinks = new List<Drink>();
